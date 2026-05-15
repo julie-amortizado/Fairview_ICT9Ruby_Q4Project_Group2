@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+</head>
+    
+    <style>
+        body {
+            font-family: Poppins; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f3f4f6;
+        }
+
+        .login-container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 12px; 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .login-container img {
+            width: 80px;
+            margin-bottom: 10px; 
+            max-width: 100%; 
+            height: auto; 
+        }
+
+        .login-container h2 {
+            font-size: 24px; 
+            font-family: Poppins; 
+            margin-top: 10px; 
+            margin-bottom: 20px; 
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-family: Poppins; 
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 12px; 
+            font-size: 14px;
+        }
+
+        .remember-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: flex-start;
+            font-size: 13px;
+            color: #555;
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+            accent-color: #007bff; 
+        }
+
+        .remember-me label {
+            margin-bottom: 0; 
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .button-group button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 500; 
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+        }
+
+        .button-group .login-btn {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .button-group .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .button-group .cancel-btn {
+            background-color: #e0e0e0; 
+            color: #333;
+        }
+
+        .button-group .cancel-btn:hover {
+            background-color: #c9c9c9;
+        }
+
+        .forgot-password {
+            font-size: 13px;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500; 
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/8b5611eb-ff3a-407f-9adc-e116a23373fc/OBMC+LOGO+2024-04.png" alt="OBMC Logo"> 
+        <h2>Login</h2>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter here">
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="********">
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="stay-logged-in">
+            <label for="stay-logged-in">Stay logged in</label>
+        </div>
+        <div class="button-group">
+            <button class="login-btn">Login</button>
+            <button class="cancel-btn">Cancel</button>
+        </div>
+        <a href="#" class="forgot-password">Forgot username / password?</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginButton = document.querySelector('.login-btn');
+            const cancelButton = document.querySelector('.cancel-btn');
+            const forgotPasswordLink = document.querySelector('.forgot-password');
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            const stayLoggedInCheckbox = document.getElementById('stay-logged-in');
+
+            loginButton.addEventListener('click', () => {
+                const username = usernameInput.value;
+                const password = passwordInput.value;
+                const stayLoggedIn = stayLoggedInCheckbox.checked;
+
+                console.log('Username:', username);
+                console.log('Password:', password);
+                console.log('Stay logged in:', stayLoggedIn);
+
+                alert('Login attempt with Username: ' + username + ', Password: ' + password + ', Stay logged in: ' + stayLoggedIn);
+            });
+
+            cancelButton.addEventListener('click', () => {
+                alert('Login cancelled.');
+                usernameInput.value = '';
+                passwordInput.value = '';
+                stayLoggedInCheckbox.checked = false;
+            });
+
+            forgotPasswordLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                alert('Redirecting to password recovery page.');
+            
+            });
+        });
+    </script>
+</body>
+</html>
