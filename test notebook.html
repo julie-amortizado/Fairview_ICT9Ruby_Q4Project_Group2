@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Classes OB DIGI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+
+body {
+background-color: #f5f7fb;
+font-family: 'Poppins', sans-serif;
+margin: 0;
+overflow-x: hidden;
+}
+
+.custom-navbar {
+height: 90px;
+z-index: 1050;
+position: relative;
+}
+
+.logo {
+height: 70px;
+width: auto;
+}
+
+.main-wrapper {
+display: flex;
+min-height: calc(100vh - 90px);
+}
+
+.sidebar {
+width: 100px;
+min-width: 100px;
+background-color: #1f2e54;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+padding-top: 50px;
+}
+
+.sidebar img {
+width: 45px;
+height: auto;
+padding: 8px;
+border-radius: 10px;
+background: rgba(255,255,255,0.1);
+transition: 0.3s;
+}
+
+.sidebar img:hover {
+background: rgba(255,255,255,0.2);
+}
+
+.content-area {
+flex-grow: 1;
+padding: 30px;
+}
+
+.page-title {
+font-weight: 600;
+color: #2d6cdf;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.card {
+border-radius: 5px;
+overflow: hidden;
+border: none;
+box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+transition: transform 0.2s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+.card-img-top {
+height: 140px;
+object-fit: cover;
+}
+
+.card-title {
+font-size: 14px;
+font-weight: 600;
+}
+
+.card-text {
+font-size: 12px;
+color: #888;
+}
+
+.join-btn {
+background-color: #89b3fc;
+color: #fff;
+border-radius: 8px;
+}
+
+.notification-badge {
+position: absolute;
+top: -6px;
+right: -10px;
+font-size: 10px;
+
+}
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar bg-white border-bottom px-3 py-2 custom-navbar">
+    <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/e01fd0f1-eda0-443b-ab56-74f748469f01/Header.png?format=1500w" class="logo">
+    <div class="d-flex align-items-center gap-4 ms-auto">
+      <div class="position-relative fs-5">
+        🔔 <span class="badge bg-danger rounded-pill notification-badge">99+</span>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <span>RENN SANTOS QT</span>
+        <span>▾</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-wrapper">
+    
+    <div class="sidebar">
+      <a href="dashboard.html"><img src="exit.png" alt="Dash"></a>
+      <a href="notebooks.html"><img src="book.png" alt="Notes"></a>
+      <a href="index.html"><img src="home.png" alt="Home"></a>
+    </div>
+
+    <div class="content-area">
+      <div class="container-fluid">
+        <h5 class="page-title">ONLINE CLASSES</h5>
+
+          <div class="col-md-20">
+            <input type="text" class="form-control" placeholder="Search class name or professor name" style="text-align: center;">
+          </div>
+          <br>
+          <div class="col-md-1 text-end">
+            <button class="btn join-btn px-4" style="text-align: center; width: 150px;">Join Class</button>
+          </div>
+
+          <br>
+
+        </div>
+
+        <p><strong>8 classes</strong></p>
+
+        <div class="row g-4">
+          
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://ict-pulse.com/wp-content/uploads/2017/02/Close-Up-of-Coding-Lorenzo-Cafaro-pexels.jpeg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">ICT Class</h6>
+                <p class="card-text">Renn Santos</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/9b942f9d-5526-43ea-b44a-f06254fc8571/O.B.+Montessori+Center+Program+-+Junior+High+School" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Homeroom Class</h6>
+                <p class="card-text">Jemina Nicole Francisco</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://bibleleague.ca/wp-content/uploads/2022/02/Philippines-Values-Education-Program_Blog.jpg" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">VE Class</h6>
+                <p class="card-text">Bernard Buntile</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://www.usnews.com/object/image/0000016d-febb-d1f0-a36f-feff44e30000/complexmathequation.jpg?update-time=1571937668689&size=responsive640" class="card-img-top">
+              <div class="card-body">
+                <h6 class="card-title">Math Class</h6>
+                <p class="card-text">Caleb Verba</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://www.weareteachers.com/wp-content/uploads/Wenger_1712_SA_IMAGE.jpg">
+              <div class="card-body">
+                <h6 class="card-title">Music Class</h6>
+                <p class="card-text">Denver Martin</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://www.allculinaryschools.com/wp-content/uploads/2016/12/culinary-arts-find-a-cooking-class.jpg">
+              <div class="card-body">
+                <h6 class="card-title">TLE Class</h6>
+                <p class="card-text">Hannah Del Barrio</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://bearyfungym.com/wp-content/uploads/2025/07/3.jpg">
+              <div class="card-body">
+                <h6 class="card-title">PEH Class</h6>
+                <p class="card-text">Alfred Cases</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card">
+              <img src="https://irp-cdn.multiscreensite.com/7bac47c1/dms3rep/multi/make+history+lessons+interesting.jpeg">
+              <div class="card-body">
+                <h6 class="card-title">SS Class</h6>
+                <p class="card-text">Prinz Reynoso</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
